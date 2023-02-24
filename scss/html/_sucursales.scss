@@ -1,0 +1,15 @@
+/* Estilos de Sucursales */
+.mainSucursales{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+    .tituloSucursales{
+        font-size: 26px;
+    }
+    .sucursalSur,.sucursalCentro{
+        margin-top: 2rem;
+    }
+}

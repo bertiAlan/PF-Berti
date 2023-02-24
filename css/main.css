@@ -1,0 +1,194 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Estilo de header y nav */
+header {
+  height: 15vh;
+  font-family: "Inconsolata", monospace;
+  font-size: small;
+  background-color: #100f0f;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 8px 15px #e3e31a; }
+  header .divLogo {
+    padding-left: 1.3rem; }
+    header .divLogo img {
+      padding-top: 0.3rem;
+      height: 92%; }
+  header nav {
+    align-self: flex-end; }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem; }
+      header nav ul a {
+        color: white;
+        text-decoration: none; }
+        header nav ul a .homeButton {
+          display: none; }
+
+/* Estilo de footer */
+footer {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  position: relative;
+  top: 1rem;
+  box-shadow: 0px -8px 15px #e3e31a;
+  background-color: #100f0f;
+  margin-top: 2rem;
+  padding: 1rem 0rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr); }
+  footer img {
+    width: 46px;
+    height: 46px; }
+  footer .seguinos, footer .derechos {
+    grid-column: span 1;
+    grid-row: span 1;
+    color: white; }
+  footer .redes {
+    grid-column: span 1;
+    grid-row: span 2;
+    justify-self: center; }
+
+/* Estilos de main en Index*/
+.mainIndex {
+  margin-top: 2rem; }
+
+.tituloIndex {
+  text-align: center;
+  font-size: 28px; }
+
+.tituloProductos, main .tituloServicios {
+  font-size: 38px;
+  margin-top: 1.5rem;
+  text-align: center; }
+
+.mainContacto .parrafosContacto .destacado {
+  margin-top: 2rem;
+  font-size: 19px;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px #60d370; }
+
+.mainProductos .detalles .nombreProducto {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold; }
+
+/* Estilos de main en Productos*/
+.mainProductos {
+  margin: 1rem 3rem 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem; }
+  .mainProductos div .imgProductos {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .mainProductos div .iPhone12 {
+    object-fit: cover; }
+  .mainProductos .detalles {
+    align-self: center; }
+    .mainProductos .detalles .detallesDet {
+      font-size: small; }
+
+/* Estilos de Servicios*/
+main .parrafoServicios {
+  margin: 1.5rem; }
+
+main .tituloLista {
+  font-size: 20px;
+  margin: 1rem;
+  text-decoration: underline; }
+
+main .listaServicios {
+  padding: 0.2rem; }
+
+/* Estilos de Contacto */
+.mainContacto {
+  margin: 0.7rem;
+  gap: 0.7rem;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap; }
+  .mainContacto .formContacto {
+    width: 80%; }
+  .mainContacto .tituloContacto {
+    font-size: 28px;
+    margin-top: 0.7rem; }
+  .mainContacto .labelsForm {
+    margin-top: 0.7rem; }
+  .mainContacto .parrafosContacto {
+    display: none;
+    align-self: center;
+    margin-top: 1rem;
+    width: 40%; }
+    .mainContacto .parrafosContacto .pContacto {
+      font-size: 17px;
+      font-weight: bold; }
+
+/* Estilos de Sucursales */
+.mainSucursales {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  .mainSucursales .tituloSucursales {
+    font-size: 26px; }
+  .mainSucursales .sucursalSur, .mainSucursales .sucursalCentro {
+    margin-top: 2rem; }
+
+/* MQ +577px */
+@media screen and (min-width: 577px) {
+  header nav ul {
+    gap: 1.8rem;
+    font-size: 16px; }
+  .mainProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem; } }
+
+/* MQ +768px */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../img/bgpic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 95%; }
+    body header nav ul li {
+      transition: 0.3s; }
+    body header nav ul li:hover {
+      text-shadow: 0.5px 0.5px yellow;
+      transition: 0.3s;
+      border-bottom: 2.5px solid yellow; }
+    body header nav ul a .homeButton {
+      display: inline; }
+  .mainContacto .formContacto {
+    width: 40%; }
+  .mainContacto .parrafosContacto {
+    display: inline-block;
+    margin-top: 1rem;
+    width: 40%; }
+  .mainSucursales {
+    flex-flow: row wrap;
+    justify-content: space-around; } }
+
+/* MQ +992px */
+@media screen and (min-width: 992px) {
+  header nav ul {
+    gap: 2.2rem;
+    font-size: 20px; }
+  .mainProductos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; }
+  footer {
+    top: 2.8rem; } }

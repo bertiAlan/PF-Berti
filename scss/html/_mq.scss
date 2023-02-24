@@ -1,0 +1,86 @@
+@import "../utilidades/mixin";
+
+/* MQ +577px */
+@media screen and (min-width:577px) {
+    header {
+        nav {
+            ul {
+                gap: 1.8rem;
+                font-size: 16px;
+            }
+        }
+    }
+    .mainProductos {
+        @include gridDesign(4, 3, 1rem);
+    }
+}
+
+/* MQ +768px */
+@media screen and (min-width:768px) {
+    body {
+        background-image: url("../img/bgpic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 95%;
+
+        header {
+            nav {
+                ul {
+                    li {
+                        transition: 0.3s
+                    }
+
+                    li:hover {
+                        text-shadow: 0.5px 0.5px yellow;
+                        transition: 0.3s;
+                        border-bottom: 2.5px solid yellow;
+                    }
+
+                    a {
+                        .homeButton {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainContacto {
+        .formContacto {
+            width: 40%;
+        }
+
+        .parrafosContacto {
+            display: inline-block;
+            margin-top: 1rem;
+            width: 40%;
+        }
+    }
+
+    .mainSucursales {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+/* MQ +992px */
+@media screen and (min-width:992px) {
+    header {
+        nav {
+            ul {
+                gap: 2.2rem;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .mainProductos {
+        @include gridDesign(6, 2, 1rem);
+
+    }
+    
+    footer {
+        top: 2.8rem;
+    }
+}

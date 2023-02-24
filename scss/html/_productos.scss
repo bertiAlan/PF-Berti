@@ -1,0 +1,31 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+/* Estilos de main en Productos*/
+.tituloProductos{
+    @extend %titulos;
+}
+.mainProductos{
+        margin: 1rem 3rem 2rem 1rem;
+        @include gridDesign(2, 6, 1rem);
+        div{      
+            .imgProductos{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            }
+            .iPhone12{
+                object-fit: cover;
+            }
+        }
+        .detalles{
+            align-self: center;
+            .nombreProducto{
+                @extend %producto;
+            }
+
+            .detallesDet{
+                font-size: small;
+            }
+        }
+    }

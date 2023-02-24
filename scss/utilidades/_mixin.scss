@@ -1,0 +1,17 @@
+@mixin iconos($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin gridDesign($gtCol, $gtRow, $gap){
+    display: grid;
+    grid-template-columns: repeat($gtCol, 1fr );
+    grid-template-rows: repeat($gtRow, 1fr) ;
+    gap: $gap;
+}
+
+@mixin gridSpan($colSpan, $rowSpan){
+    grid-column: span $colSpan;
+    grid-row: span $rowSpan;
+}
+

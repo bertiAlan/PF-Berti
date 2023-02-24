@@ -1,0 +1,18 @@
+@import "../utilidades/variables";
+/* Estilos de Servicios*/
+main{
+    .tituloServicios{
+        @extend %titulos;
+    }
+    .parrafoServicios{
+        margin: 1.5rem;
+    }
+    .tituloLista{
+        font-size: 20px;
+        margin: 1rem;
+        text-decoration: underline;
+    }
+    .listaServicios{
+        padding: 0.2rem;
+    }
+}
