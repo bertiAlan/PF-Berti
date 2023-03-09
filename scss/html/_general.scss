@@ -10,6 +10,41 @@
 
 /* Estilo de header y nav */
 header {
+    padding: 1rem;
+    font-family: $fontHead;
+    background-color: $colHeadFoot;
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    img {
+        width: 85px;
+        height: 85px;
+    }
+    nav {
+        width: 40%;
+        button{
+            align-items: end;
+            justify-content: end;
+        }
+       
+        .navbar-nav.navbar-right {
+        
+            position: relative;
+            padding-bottom: 1rem;
+            a{
+                text-decoration: none;
+                color: $colFoot;
+            }
+            li {
+                padding-top: 0.5rem;
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* header {
     height: 15vh;
     font-family: $fontHead;
     font-size: small;
@@ -42,30 +77,34 @@ header {
             }
         }
     } 
-
+ */
 /* Estilo de footer */
 footer {
     font-family: $fontFoot;
     width: 100%;
     position: relative;
     top: 1rem;
-    box-shadow: 0px -8px 15px $colShadow;  
+    box-shadow: 0px -8px 15px $colShadow;
     background-color: $colHeadFoot;
     margin-top: 2rem;
     padding: 1rem 0rem 1rem 1rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+
     img {
-        @include iconos(46px,46px)
-        }
-    .seguinos,.derechos {
-        @include gridSpan(1,1);
+        @include iconos(46px, 46px)
+    }
+
+    .seguinos,
+    .derechos {
+        @include gridSpan(1, 1);
         color: $colFoot;
     }
+
     .redes {
-        @include gridSpan(1,2);
+        @include gridSpan(1, 2);
         justify-self: center;
     }
-    
+
 }
