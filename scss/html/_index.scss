@@ -1,10 +1,28 @@
 @import "../utilidades/variables";
 
 /* Estilos de main en Index*/
-.mainIndex{
+.mainIndex {
     margin-top: 2rem;
-}
-.tituloIndex{
-    text-align: center;
-    font-size: $sizeTitulo;
+
+    #contenedorCarrousel {
+        margin: auto;
+    }
+
+    .tituloIndex {
+        margin: 1rem 0rem;
+        text-align: center;
+        font-size: $sizeTituloSm;
+    }
+
+    .titulosImg {
+        font-size: 16px;
+    }
+
+    .parrafosImg {
+        font-size: 12px;
+    }
+
+    .primerP {
+        margin-top: 1rem;
+    }
 }

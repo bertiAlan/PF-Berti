@@ -10,38 +10,44 @@
 
 /* Estilo de header y nav */
 header {
-    height: 15vh;
+    padding: 1rem;
     font-family: $fontHead;
-    font-size: small;
     background-color: $colHeadFoot;
+    font-size: medium;
+    box-shadow: 0px 8px 15px $colShadow;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0px 8px 15px $colShadow;
+    gap: 0.5rem;
 
-    .divLogo {
-        padding-left: 1.3rem;
-        img {
-            padding-top: 0.3rem;
-            height: 92%;
-        }
+    img {
+        width: 85px;
+        height: 85px;
     }
-   
+
     nav {
-        align-self: flex-end;
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
+        width: 40%;
+
+        button {
+            align-items: end;
+            justify-content: end;
+        }
+
+        .navbar-nav.navbar-right {
+
+            position: relative;
+
             a {
-                color: white;
                 text-decoration: none;
-                .homeButton {
-                        display: none;
-                    }
-                }
+                color: $colFoot;
+            }
+
+            li {
+                padding-top: 1rem;
+                text-align: right;
             }
         }
-    } 
+    }
+}
 
 /* Estilo de footer */
 footer {
@@ -49,23 +55,27 @@ footer {
     width: 100%;
     position: relative;
     top: 1rem;
-    box-shadow: 0px -8px 15px $colShadow;  
+    box-shadow: 0px -8px 15px $colShadow;
     background-color: $colHeadFoot;
     margin-top: 2rem;
     padding: 1rem 0rem 1rem 1rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+
     img {
-        @include iconos(46px,46px)
-        }
-    .seguinos,.derechos {
-        @include gridSpan(1,1);
+        @include iconos(46px, 46px)
+    }
+
+    .seguinos,
+    .derechos {
+        @include gridSpan(1, 1);
         color: $colFoot;
     }
+
     .redes {
-        @include gridSpan(1,2);
+        @include gridSpan(1, 2);
         justify-self: center;
     }
-    
+
 }
