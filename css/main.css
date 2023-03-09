@@ -19,9 +19,6 @@ header {
     height: 85px; }
   header nav {
     width: 40%; }
-    header nav button {
-      align-items: end;
-      justify-content: end; }
     header nav .navbar-nav.navbar-right {
       position: relative; }
       header nav .navbar-nav.navbar-right a {
