@@ -14,70 +14,36 @@ header {
     font-family: $fontHead;
     background-color: $colHeadFoot;
     font-size: medium;
+    box-shadow: 0px 8px 15px $colShadow;
     display: flex;
     justify-content: space-around;
     gap: 0.5rem;
+
     img {
         width: 85px;
         height: 85px;
     }
+
     nav {
         width: 40%;
-        button{
-            align-items: end;
-            justify-content: end;
-        }
-       
+
         .navbar-nav.navbar-right {
-        
+
             position: relative;
-            padding-bottom: 1rem;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $colFoot;
             }
+
             li {
-                padding-top: 0.5rem;
+                padding-top: 1rem;
                 text-align: right;
-            }
+                }
         }
     }
 }
 
-/* header {
-    height: 15vh;
-    font-family: $fontHead;
-    font-size: small;
-    background-color: $colHeadFoot;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0px 8px 15px $colShadow;
-
-    .divLogo {
-        padding-left: 1.3rem;
-        img {
-            padding-top: 0.3rem;
-            height: 92%;
-        }
-    }
-   
-    nav {
-        align-self: flex-end;
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            a {
-                color: white;
-                text-decoration: none;
-                .homeButton {
-                        display: none;
-                    }
-                }
-            }
-        }
-    } 
- */
 /* Estilo de footer */
 footer {
     font-family: $fontFoot;

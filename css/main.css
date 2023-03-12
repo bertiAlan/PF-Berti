@@ -10,6 +10,7 @@ header {
   font-family: "Inconsolata", monospace;
   background-color: #100f0f;
   font-size: medium;
+  box-shadow: 0px 8px 15px #e3e31a;
   display: flex;
   justify-content: space-around;
   gap: 0.5rem; }
@@ -18,53 +19,15 @@ header {
     height: 85px; }
   header nav {
     width: 40%; }
-    header nav button {
-      align-items: end;
-      justify-content: end; }
     header nav .navbar-nav.navbar-right {
-      position: relative;
-      padding-bottom: 1rem; }
+      position: relative; }
       header nav .navbar-nav.navbar-right a {
         text-decoration: none;
         color: white; }
       header nav .navbar-nav.navbar-right li {
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         text-align: right; }
 
-/* header {
-    height: 15vh;
-    font-family: $fontHead;
-    font-size: small;
-    background-color: $colHeadFoot;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0px 8px 15px $colShadow;
-
-    .divLogo {
-        padding-left: 1.3rem;
-        img {
-            padding-top: 0.3rem;
-            height: 92%;
-        }
-    }
-   
-    nav {
-        align-self: flex-end;
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            a {
-                color: white;
-                text-decoration: none;
-                .homeButton {
-                        display: none;
-                    }
-                }
-            }
-        }
-    } 
- */
 /* Estilo de footer */
 footer {
   font-family: "Raleway", sans-serif;
@@ -94,10 +57,18 @@ footer {
 /* Estilos de main en Index*/
 .mainIndex {
   margin-top: 2rem; }
-
-.tituloIndex {
-  text-align: center;
-  font-size: 28px; }
+  .mainIndex #contenedorCarrousel {
+    margin: auto; }
+  .mainIndex .tituloIndex {
+    margin: 1rem 0rem;
+    text-align: center;
+    font-size: 22px; }
+  .mainIndex .titulosImg {
+    font-size: 16px; }
+  .mainIndex .parrafosImg {
+    font-size: 12px; }
+  .mainIndex .primerP {
+    margin-top: 1rem; }
 
 .tituloProductos, main .tituloServicios {
   font-size: 38px;
@@ -181,10 +152,18 @@ main .listaServicios {
     margin-top: 2rem; }
 
 /* MQ +577px */
-@media screen and (min-width: 577px) {
-  header nav ul {
-    gap: 1.8rem;
-    font-size: 16px; }
+@media screen and (min-width: 576px) {
+  header nav {
+    width: auto; }
+    header nav ul {
+      gap: 1.8rem;
+      font-size: 18px; }
+      header nav ul li {
+        transition: 0.3s; }
+      header nav ul li:hover {
+        text-shadow: 0.5px 0.5px yellow;
+        transition: 0.3s;
+        border-bottom: 2.5px solid yellow; }
   .mainProductos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -197,15 +176,9 @@ main .listaServicios {
     background-image: url("../img/bgpic.png");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 95%; }
-    body header nav ul li {
-      transition: 0.3s; }
-    body header nav ul li:hover {
-      text-shadow: 0.5px 0.5px yellow;
-      transition: 0.3s;
-      border-bottom: 2.5px solid yellow; }
-    body header nav ul a .homeButton {
-      display: inline; }
+    background-attachment: fixed; }
+  .textoMqSm {
+    display: none; }
   .mainContacto .formContacto {
     width: 40%; }
   .mainContacto .parrafosContacto {
@@ -214,7 +187,9 @@ main .listaServicios {
     width: 40%; }
   .mainSucursales {
     flex-flow: row wrap;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  footer {
+    top: 5rem; } }
 
 /* MQ +992px */
 @media screen and (min-width: 992px) {
