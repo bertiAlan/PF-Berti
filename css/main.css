@@ -175,7 +175,8 @@ main .listaServicios {
   body {
     background-image: url("../img/bgpic.png");
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .textoMqSm {
     display: none; }
   .mainContacto .formContacto {
