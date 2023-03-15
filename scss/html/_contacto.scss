@@ -2,10 +2,12 @@
 /* Estilos de Contacto */
 .mainContacto{
     margin: 0.7rem;
+    padding: 1rem;
     gap: 0.7rem;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     .formContacto{
         width: 80%;
     }
@@ -16,6 +18,12 @@
     .labelsForm{
         margin-top: 0.7rem;
     }
+    .tComentarios{
+        resize: none;
+        height: 5em;
+        width: 90%;
+    }
+
     .parrafosContacto{
         display: none;
         align-self: center;
