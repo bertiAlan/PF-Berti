@@ -10,8 +10,7 @@
         @include gridDesign(2, 6, 1rem);
         div{      
             .imgProductos{
-            width: 100%;
-            height: 100%;
+            @include iconos(100%,100%);
             object-fit: contain;
             }
             .iPhone12{

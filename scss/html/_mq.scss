@@ -5,15 +5,12 @@
     header {
         nav {
             width: auto;
-
             ul {
                 gap: 1.8rem;
                 font-size: 18px;
-
                 li {
                     transition: 0.3s
                 }
-
                 li:hover {
                     text-shadow: 0.5px 0.5px yellow;
                     transition: 0.3s;
